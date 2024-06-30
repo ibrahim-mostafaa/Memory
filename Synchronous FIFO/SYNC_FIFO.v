@@ -2,7 +2,7 @@
 module SYNC_FIFO #(parameter Data_Width = 8, FIFO_Depth = 16)(
 
     input clk, rst_n, rd, wr,
-	input [Data_Width-1:0] data_in, 
+    input [Data_Width-1:0] data_in, 
     output empty, full, 
     output reg [$clog2(FIFO_Depth):0]count,
     output reg [Data_Width-1:0] data_out);
